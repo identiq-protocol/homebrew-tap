@@ -5,12 +5,12 @@
 class Sesame < Formula
   desc ""
   homepage ""
-  version "0.0.3-dev-RC.14"
+  version "0.0.3-dev-RC.15"
   depends_on :macos
 
   on_macos do
-    url "https://#{ENV['HOMEBREW_JFROG_SECRET']}@identiq.jfrog.io/artifactory/homebrew/sesame/0.0.3-dev-RC.14/ses_0.0.3-dev-RC.14_darwin.tar.gz"
-    sha256 "854354edea6d0bf301edb621dc7181032ef12a6a84faafee088a4de930c4c96d"
+    url "https://identiq.jfrog.io/artifactory/homebrew/sesame/0.0.3-dev-RC.15/ses_0.0.3-dev-RC.15_darwin.tar.gz -u #{ENV['HOMEBREW_JFROG_SECRET']}"
+    sha256 "d7c3e41c8d6913effa24a74557fb3bd5aebad961165007e86e8c3b33707bd553"
 
     def install
       bin.install "ses"
