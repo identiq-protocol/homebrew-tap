@@ -6,12 +6,12 @@ require_relative "../custom_download_strategy.rb"
 class Sesame < Formula
   desc ""
   homepage ""
-  version "0.0.3-dev-RC.9"
+  version "0.0.3-dev-RC.10"
   depends_on :macos
 
   on_macos do
-    url "https://github.com/identiq-protocol/sesame/releases/download/v0.0.3-dev-RC.9/ses_0.0.3-dev-RC.9_darwin.tar.gz", using: github_private_release
-    sha256 "79ab7d26f11f53cbca0472137bc8aed25c03721478beacd93a320f52b3c1fb46"
+    url "https://github.com/identiq-protocol/sesame/releases/download/v0.0.3-dev-RC.10/ses_0.0.3-dev-RC.10_darwin.tar.gz", using: github_private_release
+    sha256 "5702b4eb02342e652b1d697261f6ee1962ce8ec789ab2b5b4baa22ddfdb42ed4"
 
     def install
       bin.install "ses"
