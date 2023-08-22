@@ -6,12 +6,12 @@ require_relative "../custom_download_strategy.rb"
 class Sesame < Formula
   desc ""
   homepage ""
-  version "0.0.3-dev-RC.22"
+  version "0.0.3-dev-RC.23"
   depends_on :macos
 
   on_macos do
-    url "https://identiq.jfrog.io/artifactory/homebrew/sesame/0.0.3-dev-RC.22/ses_0.0.3-dev-RC.22_darwin.tar.gz", using: JfrogDownloadStrategy
-    sha256 "859e52d39520cf4e19fe592d87e132f0f2d7c54f8565508e2c93cac5d2843419"
+    url "https://identiq.jfrog.io/artifactory/homebrew/sesame/0.0.3-dev-RC.23/ses_0.0.3-dev-RC.23_darwin.tar.gz", using: JfrogDownloadStrategy
+    sha256 "54f35a8f96a32e50117e536d2b23811315f8812bbba42f2915997b5dfd625090"
 
     def install
       bin.install "sesame" => "ses"
