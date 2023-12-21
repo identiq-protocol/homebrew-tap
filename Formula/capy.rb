@@ -6,12 +6,12 @@ require_relative "../custom_download_strategy.rb"
 class Capy < Formula
   desc ""
   homepage ""
-  version "1.0.30"
+  version "1.0.31"
   depends_on :macos
 
   on_macos do
-    url "https://identiq.jfrog.io/artifactory/homebrew/capy/1.0.30/capy_1.0.30_darwin.tar.gz", using: JfrogDownloadStrategy
-    sha256 "65a179cfafd28c0b80b884ed55e6124d61790d54502e7e3d56109a6dad28da7a"
+    url "https://identiq.jfrog.io/artifactory/homebrew/capy/1.0.31/capy_1.0.31_darwin.tar.gz", using: JfrogDownloadStrategy
+    sha256 "f817fa6006ca502dd6b2337bafe27e9bed3202a0aa665a3ebf40b93878079f2a"
 
     def install
       bin.install "capy"
